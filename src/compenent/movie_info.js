@@ -1,5 +1,6 @@
 import React from "react";
 import "./movie_info.css";
+import { Link } from "react-router-dom";
 function Movie_info({title,des,trai})
 {
 
@@ -23,6 +24,7 @@ function Movie_info({title,des,trai})
                 <h1>title : {title}</h1>
                 <h2>description</h2>
                 <h2>{des}</h2>
+                <Link className="lnk_" to="/">back</Link>
             </div>
         </div>
     );
